@@ -1,9 +1,12 @@
-# Use official Grafana image
-FROM grafana/grafana:10.2.3
+# Use the official Grafana image as a base
+FROM grafana/grafana:latest
 
-# Expose Grafana port
+# Set environment variables (optional defaults)
+ENV GF_SECURITY_ADMIN_USER=admin
+ENV GF_SECURITY_ADMIN_PASSWORD=admin
+
+# Expose Grafana's default port
 EXPOSE 3000
 
-# Default command (already defined in base image, but explicit)
-CMD ["/run.sh"]
+# Grafana already has an entrypoint, so no CMD is needed
 
