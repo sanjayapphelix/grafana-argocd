@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  grafana:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-12-30T04:47:13.034809115Z"
+    description: A Helm chart for Kubernetes
+    digest: 1c65cfd87e25c4e0c6ab5ea6994d2d9768a1df63b3a3f344951f4b29ee3fdbf9
+    name: grafana
+    type: application
+    urls:
+    - grafana-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-12-30T04:47:13.033441403Z"
